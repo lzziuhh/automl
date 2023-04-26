@@ -414,7 +414,7 @@ class Stem(tf.keras.layers.Layer):
     self._conv_stem = tf.keras.layers.Conv2D(
         filters=round_filters(stem_filters, mconfig),
         kernel_size=3,
-        strides=2,
+        strides=1,
         kernel_initializer=conv_kernel_initializer,
         padding='same',
         data_format=mconfig.data_format,
